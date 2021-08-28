@@ -89,8 +89,15 @@ img {
   
 .columns {
   display: flex;
+  flex-direction: row;
 }
 
+@media (max-width: 800px) {
+  .columns {
+    flex-direction: column;
+  }
+}    
+    
 .column {
   flex: 50%;
   padding: 10px;
@@ -143,7 +150,7 @@ img {
 <div class="column">
   <p style="font-size:32px">The Supreme Court</p>
   <p style="font-size:24px">The Supreme Court of Waterside Park is the judiciary branch of the government.</p>
-<p style="font-size:24px">The Supreme Judge is an official elected every year cby every citizen.</p>
+<p style="font-size:24px">The Supreme Judge is an official elected every year by every citizen.</p>
 <p style="font-size:24px">The current Supreme Judge is Caleb Sundstrom.</p>
 </div>
 <div class="column">
@@ -171,4 +178,5 @@ img {
 
 
 </div>
+
 </body></html>
