@@ -89,8 +89,15 @@ img {
   
 .columns {
   display: flex;
+  flex-direction: row;
 }
 
+@media (max-width: 800px) {
+  .columns {
+    flex-direction: column;
+  }
+}
+    
 .column {
   flex: 50%;
   padding: 10px;
@@ -163,7 +170,7 @@ img {
 <div class="column">
 <div style="margin:auto;padding:2%;text-align:left"><p style="font-size:32px">Our Government</p>
 
-<p style="font-size:24px">The College is made up of 6 seats representing 3 constituencies, and the 7th seat, held by the reigning Monarch, who also acts as Speaker of the College.</p>
+<p style="font-size:24px">The College is made up of 6 seats representing 3 constituencies, and a 7th seat, held by the reigning Monarch, who also acts as Speaker of the College.</p>
     <a class="button" href="/our-government">Learn more</a>
 </div>
 </div>
@@ -181,5 +188,6 @@ img {
 </div>
 </div>
 </div>
-</body>
-</html>
+
+
+</body></html>
