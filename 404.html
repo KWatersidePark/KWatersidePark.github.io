@@ -1,17 +1,18 @@
 <html><head>
-  <title>Waterside Park</title>
+  <title>Elmwycke</title>
   <link rel="shortcut icon" type="image/png" href="icon.png?">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Waterside Park - 404">
+  <meta property="og:title" content="Elmwycke - 404">
   <meta property="og:description" content="That page could not be found.">
   <meta property="og:url" content="https://kwatersidepark.github.io">
   <meta property="og:image" content="/icon.png">
 <style>
+
 body {margin:0;}
 
 @font-face {
-  font-family: "Albertus Medium";
-  src: url('/albr55w.ttf');
+  font-family: "Albertus Nova";
+  src: url('/AlbertusNova.ttf');
 }
   
 .example::-webkit-scrollbar {
@@ -28,7 +29,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #7137c8;
+  background-color: #a00033;
   position: fixed;
   top: 0;
   left: 0;
@@ -47,8 +48,8 @@ ul {
 
 body {
   color: #ffffff;
-  background-color: #151550;
-  font-family: Albertus Medium;
+  background-color: #d40055;
+  font-family: Albertus Nova, sans-serif;
 }
 
 li {
@@ -65,12 +66,12 @@ li a {
 }
 
 li a:hover {
-  background-color: #151550;
+  background-color: #d40055;
   color: #ffffff;
 }
 
 .active {
-  background-color: #151550;
+  background-color: #d40055;
   color: #ffffff;
 }
 
@@ -89,14 +90,20 @@ img {
   
 .columns {
   display: flex;
+  flex-direction: row;
 }
 
+@media (max-width: 800px) {
+  .columns {
+    flex-direction: column;
+  }
+}    
+    
 .column {
   flex: 50%;
   padding: 10px;
-  text-align: center;
+  text-align: left;
 }
-
 </style>
 </head>
 <body>
